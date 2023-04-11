@@ -1,11 +1,8 @@
-const Cart = require('../src/Cart.js');
-const expect = require('chai').expect;
-
-describe('Cart', () => {
-    it('should initialize as empty', () => {
-        const cart = new Cart()
-
-        expect(cart.items).to.deep.equal([])
-        expect(cart.totalPrice).to.be.equal(0)
-    })
+test('AC1',()=>{
+    //Arrange
+    const assert = 0;
+    //Act
+    const result = cart.items
+    //Assert
+    expect(result).toBe(assert)
 })
