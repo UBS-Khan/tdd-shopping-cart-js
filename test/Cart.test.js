@@ -24,3 +24,18 @@ test('AC2',()=>{
     expect(result).toBe(assert);
 })
 
+test('AC3',()=>{
+    //Arrange
+    const assert = ['Handbag - x2', 'Gum - x5'];
+    const cart = new Cart();
+    cart.clearList();
+    const item = new Item("Handbag", 25, false, 2);
+    const item2 = new Item("Gum", 5, false, 5);
+    cart.addItem(item)
+    cart.addItem(item2)
+    //Act
+    const result = cart.itemQuantities();
+    //Assert
+    expect(result).toBe(assert);
+})
+
