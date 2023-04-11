@@ -34,8 +34,8 @@ test('AC3',()=>{
     cart.addItem(item)
     cart.addItem(item2)
     //Act
-    const result = cart.itemQuantities();
+    const result = cart.itemQuantities(cart.items);
     //Assert
-    expect(result).toBe(assert);
+    expect(result).toEqual(assert);
 })
 
