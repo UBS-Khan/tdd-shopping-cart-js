@@ -1,4 +1,6 @@
 const Cart = require('../src/Cart.js')
+const Item = require('../src/Item.js')
+
 test('AC1',()=>{
     //Arrange
     const assert = 0;
@@ -14,8 +16,8 @@ test('AC2',()=>{
     const assert = 50;
     const cart = new Cart();
     cart.clearList();
-    const item = new Item("Handbag", 25, false);
-    cart.addItem(item, 2)
+    const item = new Item("Handbag", 25, false, 2);
+    cart.addItem(item)
     //Act
     const result = cart.totalPrice;
     //Assert
