@@ -7,4 +7,6 @@ module.exports = class Cart {
         const price = item.price * item.quantity;
         this.totalPrice += price;
     }
+
+    itemQuantities = (items) => items.map(item => `${item.name} - x${item.quantity}`) 
 }
