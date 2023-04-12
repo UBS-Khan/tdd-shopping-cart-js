@@ -50,3 +50,17 @@ test('AC4',()=>{
     //Assert
     expect(result).toEqual(assert);
 });
+
+test('AC5',()=>{
+    //Arrange
+    const assert = 16;
+    const cart = new Cart();
+    const itemM = new Item("Mango", 4, false, 2)
+    const itemB = new Item("Banana", 2, false, 4)
+    cart.addItem(itemM)
+    cart.addItem(itemB)
+    //Act
+    const result = cart.totalPrice;
+    //Assert
+    expect(result).toEqual(assert);
+});
