@@ -9,3 +9,15 @@ test('AC1',()=>{
     //Assert
     expect(result).toEqual(assert);
 });
+
+test('AC2',()=>{
+    //Arrange
+    const assert = 8;
+    const cart = new Cart();
+    const item = new Item("Mango", 4, false, 2)
+    cart.addItem(item)
+    //Act
+    const result = cart.totalPrice();
+    //Assert
+    expect(result).toEqual(assert);
+});
