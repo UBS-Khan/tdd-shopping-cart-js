@@ -12,5 +12,9 @@ module.exports = class Cart {
 
     itemizedList = (items) => items.map(item => `${item.name} - x${item.quantity} - $${item.price*item.quantity}`);
     
-    
+    onSaleItems = (items) => items.map(item => {
+        if(item.onSale == true){
+            return `${item.name} - x${item.quantity} - $${item.price*item.quantity}`
+        }
+    });
 }
