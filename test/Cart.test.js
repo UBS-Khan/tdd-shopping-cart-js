@@ -64,3 +64,18 @@ test('AC5',()=>{
     //Assert
     expect(result).toEqual(assert);
 });
+
+test('AC6',()=>{
+    //Arrange
+    const assert = ['Carrot - x1 - $1'];
+    const cart = new Cart();
+    const itemM = new Item("Mango", 4, false, 2)
+    const itemB = new Item("Banana", 2, false, 4)
+    const itemC = new Item("Carrot", 1, true, 1)
+    cart.addItem(itemM)
+    cart.addItem(itemB)
+    //Act
+    const result = cart.onSaleItems(cart.items);
+    //Assert
+    expect(result).toEqual(assert);
+});
