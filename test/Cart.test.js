@@ -69,11 +69,10 @@ test('AC6',()=>{
     //Arrange
     const assert = ['Carrot - x1 - $1'];
     const cart = new Cart();
-    const itemM = new Item("Mango", 4, false, 2)
-    const itemB = new Item("Banana", 2, false, 4)
+    const itemO = new Item("Orange", 1, false, 1)
     const itemC = new Item("Carrot", 1, true, 1)
-    cart.addItem(itemM)
-    cart.addItem(itemB)
+    cart.addItem(itemC)
+    cart.addItem(itemO)
     //Act
     const result = cart.onSaleItems(cart.items);
     //Assert
