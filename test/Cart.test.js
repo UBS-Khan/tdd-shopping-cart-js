@@ -1,4 +1,5 @@
 const Cart = require("../src/Cart")
+const Item = require("../src/Item")
 
 test('AC1',()=>{
     //Arrange
@@ -17,7 +18,7 @@ test('AC2',()=>{
     const item = new Item("Mango", 4, false, 2)
     cart.addItem(item)
     //Act
-    const result = cart.totalPrice();
+    const result = cart.totalPrice;
     //Assert
     expect(result).toEqual(assert);
 });
