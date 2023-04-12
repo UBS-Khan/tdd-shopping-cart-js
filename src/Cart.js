@@ -8,5 +8,9 @@ module.exports = class Cart {
         this.totalPrice += price;
     }
 
-    itemQuantities = (items) => items.map(item => `${item.name} - x${item.quantity}`) 
+    itemQuantities = (items) => items.map(item => `${item.name} - x${item.quantity}`) ;
+
+    itemizedList = (items) => items.map(item => `${item.name} - x${item.quantity} - $${item.price*item.quantity}`);
+    
+    
 }
